@@ -1,5 +1,13 @@
 const projects = [
     {
+        title: "Hostal Mariela",
+        description: "Sitio web del Hostal Mariela: diseño responsivo para reservas y presentación del hospedaje.",
+        image: `<img src="hostal.png" alt="Hostal Mariela" class="project-image">`,
+        link: "https://intermarket96.github.io/Hostal-Mariela/",
+        repo: "https://github.com/riossantos32/CV_intermarket",
+        tags: ["HTML", "CSS", "JS"]
+    },
+    {
         title: "Hotel luna",
         description: "Hotel Luna es un hospedaje de ambiente familiar y urbano ubicado en Juigalpa, Chontales. Diseñado especialmente para viajeros de negocios, comerciantes, visitadores médicos y turistas que buscan una estancia cómoda, segura y accesible..",
         image: `<img src="hotelluna.png" alt="Hotel Luna" class="project-image">`,
@@ -55,6 +63,7 @@ function createProjectCard(project) {
                 <div class="project-tags" style="margin-bottom: 1rem;">
                     ${project.tags.map(tag => `<span style="background: #f1f5f9; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-right: 0.5rem; color: #64748b;">${tag}</span>`).join('')}
                 </div>
+                ${project.repo ? `<p><a href="${project.repo}" target="_blank" rel="noopener" style="font-size:0.9rem; color:#2563eb; text-decoration:none;">Ver repositorio</a></p>` : ''}
                 <span class="project-link">Ver Proyecto <span>&rarr;</span></span>
             </div>
         </div>
