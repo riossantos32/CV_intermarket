@@ -15,6 +15,14 @@ const projects = [
         tags: ["HTML", "CSS", "JS"]
     },
     {
+        title: "Elite Boutique",
+        description: "Landing page de Elite Boutique con diseño elegante y experiencia de compra visualmente atractiva.",
+        image: `<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Elite Boutique" class="project-image">`,
+        link: "https://riossantos32.github.io/Elite-Boutique/",
+        repo: "https://github.com/riossantos32/Elite-Boutique",
+        tags: ["HTML", "CSS", "JS"]
+    },
+    {
         title: "Task Manager",
         description: "Aplicación para gestionar tareas diarias con almacenamiento local (LocalStorage).",
         image: "📝",
